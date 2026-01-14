@@ -3,21 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Epicode | WD - My Portfolio</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
     <!-- Script -->
-    <script src="script/main.js"></script>
+    <script src="script/main.js" defer></script>
   </head>
 
-  <body>
+  <body class="container">
     <!-- HEADER -->
-    <header>HEADER</header>
+    <header>
+      <div class="header-top">
+        <h2 class="app-btn btn-burger"><i class="fa-solid fa-bars"></i></h2>
+        <h1 class="header-title">My Portfolio</h1>
+      </div>
+      <nav class="header-bottom">
+        <ul>
+          <li>
+            <div class="app-btn btn-home">
+              <h2><i class="fa-solid fa-house"></i></h2>
+              <div>Home</div>
+            </div>
+          </li>
+          <li>
+            <div class="app-btn btn-about">
+              <h2><i class="fa-solid fa-user"></i></h2>
+              <div>About</div>
+            </div>
+          </li>
+          <li>
+            <div class="app-btn btn-resume">
+              <h2><i class="fa-solid fa-folder-open"></i></h2>
+              <div>Resume</div>
+            </div>
+          </li>
+          <li>
+            <div class="app-btn btn-contact">
+              <h2><i class="fa-solid fa-phone"></i></h2>
+              <div>Contact</div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- MAIN -->
-    <main>MAIN</main>
+    <main>
+      <section>HOME SECTION</section>
+      <section>ABOUT SECTION</section>
+      <section>RESUME SECTION</section>
+      <section>CONTACT SECTION</section>
+    </main>
 
     <!-- FOOTER -->
-    <footer>FOOTER</footer>
+    <footer>
+      <div>Web Development Project | Tommaso Cavini</div>
+    </footer>
   </body>
 </html>

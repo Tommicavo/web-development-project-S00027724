@@ -1,0 +1,29 @@
+.app-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app-btn:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.btn-burger {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  padding: 0.25rem 0.25rem;
+}
+
+.btn-burger:hover {
+  border: 2px solid var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .btn-burger {
+    display: none;
+  }
+}
