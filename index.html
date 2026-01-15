@@ -15,7 +15,9 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/sections/burger.css" />
     <!-- Script -->
+    <script src="script/linksTemplate.js"></script>
     <script src="script/main.js" defer></script>
   </head>
 
@@ -26,42 +28,26 @@
         <h2 class="app-btn btn-burger"><i class="fa-solid fa-bars"></i></h2>
         <h1 class="header-title">My Portfolio</h1>
       </div>
-      <nav class="header-bottom">
-        <ul>
-          <li>
-            <div class="app-btn btn-home">
-              <h2><i class="fa-solid fa-house"></i></h2>
-              <div>Home</div>
-            </div>
-          </li>
-          <li>
-            <div class="app-btn btn-about">
-              <h2><i class="fa-solid fa-user"></i></h2>
-              <div>About</div>
-            </div>
-          </li>
-          <li>
-            <div class="app-btn btn-resume">
-              <h2><i class="fa-solid fa-folder-open"></i></h2>
-              <div>Resume</div>
-            </div>
-          </li>
-          <li>
-            <div class="app-btn btn-contact">
-              <h2><i class="fa-solid fa-phone"></i></h2>
-              <div>Contact</div>
-            </div>
-          </li>
-        </ul>
-      </nav>
+      <nav class="header-bottom"></nav>
     </header>
 
     <!-- MAIN -->
     <main>
-      <section>HOME SECTION</section>
-      <section>ABOUT SECTION</section>
-      <section>RESUME SECTION</section>
-      <section>CONTACT SECTION</section>
+      <div class="burger-menu-container">
+        <div class="burger-menu">
+          <div class="burger-menu-header">
+            <h2 class="burger-menu-title">Links</h2>
+            <div class="app-btn btn-close">
+              <h2><i class="fa-solid fa-xmark"></i></h2>
+            </div>
+          </div>
+          <div class="burger-menu-body">BURGEZ</div>
+        </div>
+      </div>
+      <section id="home" class="active">HOME SECTION</section>
+      <section id="about">ABOUT SECTION</section>
+      <section id="resume">RESUME SECTION</section>
+      <section id="contact">CONTACT SECTION</section>
     </main>
 
     <!-- FOOTER -->

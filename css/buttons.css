@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
+.app-btn.active {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .btn-burger {
   width: 2.5rem;
   height: 2.5rem;
@@ -20,6 +25,11 @@
 
 .btn-burger:hover {
   border: 2px solid var(--accent-color);
+}
+
+.burger-menu-header .btn-close {
+  grid-column: 3;
+  justify-self: end;
 }
 
 @media (min-width: 768px) {
