@@ -1,0 +1,93 @@
+section#about.active {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.biography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.about-edu,
+.about-work {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Carousel Mobile: only current slot visible */
+.carousel-container .slot.slot-prev,
+.carousel-container .slot.slot-next {
+  display: none;
+}
+
+/* Carousel Tablet: prev and current slots visible */
+@media (min-width: 768px) {
+  .carousel-container .slot.slot-prev {
+    display: flex;
+  }
+}
+
+/* Carousel Desktop: all prev, current and next slots visible */
+@media (min-width: 1024px) {
+  .carousel-container .slot.slot-next {
+    display: flex;
+  }
+}
+
+/* Slot */
+.slot {
+  border: 2px solid var(--accent-color);
+  border-radius: 2rem;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slots Width */
+.slot-current {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .slot-current,
+  .slot-prev {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slot-current,
+  .slot-prev,
+  .slot-next {
+    width: 25%;
+  }
+}
+
+.slot-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-title {
+  text-align: center;
+  color: var(--accent-color);
+  align-content: center;
+}

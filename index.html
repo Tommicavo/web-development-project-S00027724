@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/buttons.css" />
     <link rel="stylesheet" href="css/sections/burger.css" />
+    <link rel="stylesheet" href="css/sections/about.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Script -->
     <script src="script/linksTemplate.js"></script>
     <script src="script/main.js" defer></script>
@@ -45,7 +46,29 @@
         </div>
       </div>
       <section id="home" class="active">HOME SECTION</section>
-      <section id="about">ABOUT SECTION</section>
+      <section id="about">
+        <div class="biography">
+          Hi I'm Tommaso, I am working as Software Developer and I am studying at Epicode. Here's the Web Development Project of Computer Engineering and
+          Artificial Intelligence Bachelor. Above this about's paragraph there are a couple of pretty carousels showing my work and education experiences in a
+          cool way :)
+        </div>
+        <div class="about-edu">
+          <h3 class="about-title"><<< Educationsss <<<</h3>
+          <div class="carousel-container edu-carousel clock-wise">
+            <div class="slot slot-prev"></div>
+            <div class="slot slot-current"></div>
+            <div class="slot slot-next"></div>
+          </div>
+        </div>
+        <div class="about-work">
+          <h3 class="about-title">>>> Worksss >>></h3>
+          <div class="carousel-container work-carousel counter-clock-wise">
+            <div class="slot slot-prev"></div>
+            <div class="slot slot-current"></div>
+            <div class="slot slot-next"></div>
+          </div>
+        </div>
+      </section>
       <section id="resume">RESUME SECTION</section>
       <section id="contact">CONTACT SECTION</section>
     </main>
