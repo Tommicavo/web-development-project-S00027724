@@ -16,6 +16,7 @@ const workCards = [
   "<ul class='slot-content'><li><h4>FC Automazione</h4></li><li><span>Where: Firenze</span></li><li><span>When: [2020 - 2023]</span></li><li><span>PLC Programmer</span></li></ul>",
   "<ul class='slot-content'><li><h4>Technology Reply</h4></li><li><span>Where: Milano</span></li><li><span>When: [2023 - 2025]</span></li><li><span>Java Developer</span></li></ul>",
   "<ul class='slot-content'><li><h4>SITTI</h4></li><li><span>Where: Milano</span></li><li><span>When: [2026 - Present]</span></li><li><span>Springboot Developer</span></li></ul>",
+  "<ul class='slot-content'><li><h4>Future Job</h4></li><li><span>Where: Unknown</span></li><li><span>When: Unknown</span></li><li><span>AI Developer</span></li></ul>",
 ];
 const workContentSlotPrev = document.querySelector(".work-carousel .slot-prev");
 const workContentSlotCurrent = document.querySelector(".work-carousel .slot-current");
