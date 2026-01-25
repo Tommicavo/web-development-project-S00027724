@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/sections/burger.css" />
     <link rel="stylesheet" href="css/sections/about.css" />
     <link rel="stylesheet" href="css/sections/resume.css" />
+    <link rel="stylesheet" href="css/sections/contact.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Script -->
     <script src="script/linksTemplate.js"></script>
@@ -71,6 +72,12 @@
         </div>
       </section>
       <section id="resume">
+        <div class="header-title">
+          <h3>
+            <span>Check out my Skills below!</span>
+            <span><i class="fa-regular fa-heart"></i></span>
+          </h3>
+        </div>
         <div class="resume-container">
           <div class="skill"><h2>HTML</h2></div>
           <div class="skill"><h2>CSS</h2></div>
@@ -78,8 +85,6 @@
           <div class="skill"><h2>Javascript</h2></div>
           <div class="skill"><h2>Node.js</h2></div>
           <div class="skill"><h2>Vue.js</h2></div>
-          <div class="skill"><h2>React</h2></div>
-          <div class="skill"><h2>Angular</h2></div>
           <div class="skill"><h2>Alpine.js</h2></div>
           <div class="skill"><h2>Python</h2></div>
           <div class="skill"><h2>Java 8</h2></div>
@@ -97,10 +102,76 @@
           <div class="skill"><h2>Source Tree</h2></div>
           <div class="skill"><h2>MySQL</h2></div>
           <div class="skill"><h2>PostgreSQL</h2></div>
-          <div class="skill"><h2>MongoDB</h2></div>
         </div>
       </section>
-      <section id="contact">CONTACT SECTION</section>
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-top">
+            <div class="header-title">
+              <h3>
+                <span><i class="fa-solid fa-handshake"></i></span>
+                <span>Let's get in touch on:</span>
+              </h3>
+            </div>
+            <div class="social-container">
+              <a href="https://www.linkedin.com/in/tommaso-cavini" target="_blank">
+                <h3><i class="fa-brands fa-linkedin"></i></h3>
+                <h3>LinkedIn</h3>
+              </a>
+              <a href="https://github.com/Tommicavo" target="_blank">
+                <h3><i class="fa-brands fa-github"></i></h3>
+                <h3>GitHub</h3>
+              </a>
+              <a href="#">
+                <h3><i class="fa-solid fa-mobile"></i></h3>
+                <h3>+39 392 8512246</h3>
+              </a>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="header-title">
+              <h3>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>Or Email me right now:</span>
+              </h3>
+            </div>
+            <div class="contact-form">
+              <div class="form-card">
+                <div class="name">
+                  <label for="name-input">Your Name:</label>
+                  <div class="input-raw">
+                    <h2><i class="fa-solid fa-user"></i></h2>
+                    <input type="text" id="name-input" />
+                  </div>
+                  <div class="error name-error"></div>
+                </div>
+                <div class="email">
+                  <label for="email-input">Your Email:</label>
+                  <div class="input-raw">
+                    <h2><i class="fa-solid fa-at"></i></h2>
+                    <input type="text" id="email-input" />
+                  </div>
+                  <div class="error email-error"></div>
+                </div>
+                <div class="message">
+                  <label for="message-input">Leave you message here:</label>
+                  <div class="input-raw">
+                    <h2><i class="fa-solid fa-comment-dots"></i></h2>
+                    <textarea id="message-input" rows="4"></textarea>
+                  </div>
+                  <div class="error message-error"></div>
+                </div>
+                <div id="send-btn" class="app-btn">
+                  <h3>
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                    <span>Send</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

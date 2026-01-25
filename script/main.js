@@ -50,6 +50,20 @@ document.addEventListener("DOMContentLoaded", () => {
   burgerBtnOpen.addEventListener("click", openBurgerMenu);
   burgerBtnClose.addEventListener("click", closeBurgerMenu);
 
+  // Contact Section Form
+  nameInput = document.getElementById("name-input");
+  emailInput = document.getElementById("email-input");
+  messageInput = document.getElementById("message-input");
+
+  nameError = document.querySelector(".name-error");
+  emailError = document.querySelector(".email-error");
+  messageError = document.querySelector(".message-error");
+
+  sendBtn = document.getElementById("send-btn");
+  if (sendBtn) {
+    sendBtn.addEventListener("click", submitForm);
+  }
+
   moveCarousel(educationCards, educationContentSlotPrev, educationContentSlotCurrent, educationContentSlotNext, FORWARD);
   moveCarousel(workCards, workContentSlotPrev, workContentSlotCurrent, workContentSlotNext, BACKWARD);
 });
@@ -121,4 +135,55 @@ function getCard(index, cards) {
   } else {
     return placeholderCard;
   }
+}
+
+function submitForm() {
+  console.log("Send Btn clicked");
+
+  clearErrors();
+
+  const nameValue = nameInput.value.trim();
+  const emailValue = emailInput.value.trim();
+  const messageValue = messageInput.value.trim();
+
+  let hasErrors = false;
+
+  if (nameValue == "") {
+    nameError.textContent = "Name must not be empty";
+    hasErrors = true;
+  }
+
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailValue == "") {
+    emailError.textContent = "Email must not be empty";
+    hasErrors = true;
+  } else if (!regex.test(emailValue)) {
+    emailError.textContent = "Provide a valid email";
+    hasErrors = true;
+  }
+
+  if (messageValue == "") {
+    messageError.textContent = "Leave a message!";
+    hasErrors = true;
+  }
+
+  if (!hasErrors) {
+    console.log("Form Submitted!");
+    console.log("Data:", { nameValue, emailValue, messageValue });
+    clearErrors();
+    clearValues();
+    alert("Your email has been successfully sent!");
+  }
+}
+
+function clearErrors() {
+  nameError.textContent = "";
+  emailError.textContent = "";
+  messageError.textContent = "";
+}
+
+function clearValues() {
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
 }

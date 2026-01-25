@@ -8,6 +8,7 @@
   --burger-color: #313131;
   --text-color: #f0f0f0;
   --accent-color: #ffea00;
+  --error-color: red;
 }
 
 * {
@@ -112,4 +113,11 @@ main {
     align-items: center;
     gap: 3rem;
   }
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }

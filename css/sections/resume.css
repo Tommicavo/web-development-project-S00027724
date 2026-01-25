@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .skill {
@@ -27,7 +27,7 @@
 @media (min-width: 768px) {
   .resume-container {
     gap: 2rem;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   .skill {
@@ -39,7 +39,7 @@
 @media (min-width: 1024px) {
   .resume-container {
     gap: 3rem;
-    padding: 3rem;
+    padding: 0 3rem;
   }
 
   .skill {
